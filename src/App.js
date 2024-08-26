@@ -1,28 +1,30 @@
 import logo from '../src/assets/2x/logo@2x.png';
 import './App.css';
 import Header from '../src/components/User/Header';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './views/User/Home';
+import Store from './views/User/Store';
+import headNav from './components/User/BreadcrumbComponent';
 function App() {
   return (
-    
-    <div className="App">
-      <Header />
-      <header className="App-header">
-        
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* First Step Routes */}
+        <Route path="/signIn" element="#" />
+        <Route path="/signUp" element="#" />
+        <Route path="/reset-password" element="#" />
+        <Route path="/send-email" element="#" />
+
+        {/* User Routes */}
+        <Route path="/store" element={<Store />} />
+        <Route path="/nav" element={<headNav />} />
+
+        {/* Admin Routes */}
+        <Route path="/admin" element="#" />
+        {/* Default Route */}
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -32,7 +32,97 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+:root{
+  --primary-color: linear-gradient(135deg, #3574B9 0%, #F7AD7E 50%, #76C26E 100%);
+  --secondary-color: linear-gradient(135deg, #183658 0%, #631854 50%, #255B20 100%);
+}
+
+*{
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Header */
+.header-container {
+  background: var(--secondary-color);
+}
+
+.icon-user {
+  font-size: 24px;
+}
+
+/* Home User */
+
+.btn-unique {
+  background: var(--primary-color);
+}
+
+.straightline {
+  width: 0.5px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.frog-tokens-header {
+  padding: 20px;
+}
+
+.frog-token-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.frog-token-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.frog-token-button {
+  position: absolute;
+  top: 90%;
+  right: 43%;
+  z-index: 2;
+}
+
+.gradient-button {
+  background: var(--primary-color);
+  border: none;
+}
+
+.focus-content {
+  font-weight: lighter;
+}
+
+.user_icon {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.menu_drop_down::after {
+  display: none !important;
+  /* Hide the down arrow */
+}
+
+/* Store */
+.breadcrumb-item a,
+.breadcrumb-item+.breadcrumb-item::before{
+  color:white !important;
+  text-decoration: none;
+}
+
+.btn-combo {
+  position: absolute;
+  width: 20%;
+  top: 85vh;
+  right: 7%;
+  z-index: 2;
 }
