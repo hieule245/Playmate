@@ -13,7 +13,7 @@ const Footer = () => {
                     <Row>
                         <Col md={6} className="text-lg-start">
                             <div style={{ fontSize: '1.2em', fontWeight: 'bold', marginBottom: '10px' }}>
-                                <img src={logo_footer} alt="Playmates Logo" style={{ height: '40px', marginRight: '10px' }} />
+                                <img src={logo_footer} alt="Playmates Logo" style={{ height: '3.5em', marginRight: '10px' }} />
                             </div>
                             <div className='opacity-50'>
                                 <p>FPT Da Nang, Hoa Hai, Da Nang</p>

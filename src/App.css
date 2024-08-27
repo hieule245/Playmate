@@ -38,12 +38,12 @@
   }
 }
 
-:root{
+:root {
   --primary-color: linear-gradient(135deg, #3574B9 0%, #F7AD7E 50%, #76C26E 100%);
   --secondary-color: linear-gradient(135deg, #183658 0%, #631854 50%, #255B20 100%);
 }
 
-*{
+* {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -114,15 +114,16 @@
 
 /* Store */
 .breadcrumb-item a,
-.breadcrumb-item+.breadcrumb-item::before{
-  color:white !important;
+.breadcrumb-item+.breadcrumb-item::before {
+  color: white !important;
   text-decoration: none;
 }
 
+
 .btn-combo {
   position: absolute;
-  width: 20%;
-  top: 85vh;
+  width: 15%;
+  top: 85%;
   right: 7%;
   z-index: 2;
 }

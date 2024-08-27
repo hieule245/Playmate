@@ -4,7 +4,6 @@ import Header from '../src/components/User/Header';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './views/User/Home';
 import Store from './views/User/Store';
-import headNav from './components/User/BreadcrumbComponent';
 function App() {
   return (
     <BrowserRouter>
@@ -17,7 +16,6 @@ function App() {
 
         {/* User Routes */}
         <Route path="/store" element={<Store />} />
-        <Route path="/nav" element={<headNav />} />
 
         {/* Admin Routes */}
         <Route path="/admin" element="#" />

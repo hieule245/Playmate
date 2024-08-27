@@ -17,7 +17,7 @@ const NotificationPopover = () => {
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
-  const notificationsPerPage = 5;
+  const notificationsPerPage = 4;
 
   const indexOfLastNotification = currentPage * notificationsPerPage;
   const indexOfFirstNotification = indexOfLastNotification - notificationsPerPage;
