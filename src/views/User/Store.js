@@ -15,7 +15,7 @@ import custome_token from '../../assets/products/Customer token.png'
 import Header from '../../../src/components/User/Header';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import Footer from '../../components/User/Footer'
-import BackToTopButton from '../../components/User/backToTop';
+import BackToTopButton from '../../components/User/BackToTop';
 import BreadcrumbComponent from '../../components/User/BreadcrumbComponent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -113,7 +113,7 @@ function Store() {
                             <div className='mb-3 mt-3 '>
                                 <div className='frog-tokens-header d-flex justify-content-between align-items-center p-2'>
                                     <h4>Frog tokens</h4>
-                                    <a href='#' className='text-light'><FontAwesomeIcon icon={faArrowRight} /></a>
+                                    <a href='/store/tokens' className='text-light'><FontAwesomeIcon icon={faArrowRight} /></a>
                                 </div>
                                 <Row className='m-3'>
                                     {Array(3).fill(null).map((_, index) => (

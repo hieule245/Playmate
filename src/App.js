@@ -4,6 +4,7 @@ import Header from '../src/components/User/Header';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './views/User/Home';
 import Store from './views/User/Store';
+import Tokens from './views/User/TokenCollection';
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ function App() {
 
         {/* User Routes */}
         <Route path="/store" element={<Store />} />
+        <Route path="/store/tokens" element={<Tokens />} />
 
         {/* Admin Routes */}
         <Route path="/admin" element="#" />

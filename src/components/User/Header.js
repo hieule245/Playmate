@@ -4,8 +4,8 @@ import logo from '../../assets/2x/logo@2x.png';
 import { Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faBell, faUserCircle } from '@fortawesome/free-solid-svg-icons';
-import NotificationPopover from './notificationPopover';
-import CartPopover from './cartPopover';
+import NotificationPopover from './NotificationPopover';
+import CartPopover from './CartPopover';
 
 const Header = () => {
   return (

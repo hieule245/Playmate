@@ -127,3 +127,62 @@
   right: 7%;
   z-index: 2;
 }
+
+/* Pagination Component*/
+.pagination-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-pagination .page-link {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Adjust this for the background color */
+  color: #ffffff85;
+  /* Text color */
+  border: none;
+  /* Remove border */
+  border-radius: 50%;
+  /* Circular pagination items */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  /* Space between items */
+}
+
+.custom-pagination .page-item.active .page-link {
+  background-color: #fff;
+  /* Active background color */
+  color: #000;
+  /* Active text color */
+  font-weight: bold;
+}
+
+.custom-pagination .page-link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Hover background color */
+}
+
+.custom-pagination .page-link:first-child,
+.custom-pagination .page-link:last-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.custom-pagination {
+  justify-content: center;
+  /* Center the pagination */
+}
+
+/* Token Collection */
+.btn_item {
+  background: rgba(0, 0, 0, 0) !important;
+  border: rgba(0, 0, 0, 0) !important;
+}
+
+.btn_item:hover {
+  background: rgba(0, 0, 0, 0.1) !important;
+}

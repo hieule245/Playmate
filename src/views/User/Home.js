@@ -14,7 +14,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { faChess, faHistory, faUserFriends, faSortAlphaDown, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Footer from '../../components/User/Footer'
-import BackToTopButton from '../../components/User/backToTop';
+import BackToTopButton from '../../components/User/BackToTop';
 function Home() {
   const [formData, setFormData] = useState({
     name: '',
@@ -152,7 +152,7 @@ function Home() {
             <Container>
               <div className='frog-tokens-header d-flex justify-content-between align-items-center p-2'>
                 <h4>Frog tokens</h4>
-                <a href='#' className='text-light'><FontAwesomeIcon icon={faArrowRight} /></a>
+                <a href='/store/tokens' className='text-light'><FontAwesomeIcon icon={faArrowRight} /></a>
               </div>
               <Row>
                 {Array(3).fill(null).map((_, index) => (
