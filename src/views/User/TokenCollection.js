@@ -5,8 +5,6 @@ import { Button, Card, Col, Container, Dropdown, FormControl, InputGroup, Row } 
 import Footer from '../../components/User/Footer'
 import BackToTopButton from '../../components/User/BackToTop';
 import BreadcrumbComponent from '../../components/User/BreadcrumbComponent';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartPlus, faSearch } from '@fortawesome/free-solid-svg-icons';
 import products from '../../assets/2x/product_thorog.png'
 import CustomPagination from '../../components/User/PaginationComponent';
 
@@ -14,7 +12,7 @@ function Collection() {
     const [searchTerm, setSearchTerm] = useState('');
     const [filter, setFilter] = useState('most popular');
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage, setItemsPerPage] = useState(6); // Default items per page
+    const [itemsPerPage, setItemsPerPage] = useState(9); // Default items per page
     const items = Array(20).fill({
         img: products,
         title: 'Throgo Token',
@@ -65,7 +63,7 @@ function Collection() {
                                 <Col xs={10}>
                                     <InputGroup>
                                         <InputGroup.Text>
-                                            <FontAwesomeIcon className='icon-user' icon={faSearch} />
+                                            <i className='icon-user' class="fas fa-search"></i>
                                         </InputGroup.Text>
                                         <FormControl
                                             placeholder="Search name token..."
@@ -97,7 +95,7 @@ function Collection() {
                                 {paginatedItems.map((item, index) => (
                                     <Col xs={4} key={index}>
                                         <div className='w-100 p-2'>
-                                            <Button className='w-100 p-3 btn_item'>
+                                            <Button href="/store/tokens/:token_id" className='w-100 p-3 btn_item'>
                                                 <img className='w-100' src={item.img} alt="Playmates Logo" />
                                                 <Row>
                                                     <Col xs={8} className='d-flex flex-column align-items-start'>
@@ -107,7 +105,9 @@ function Collection() {
                                                     </Col>
                                                     <Col xs={4} className='H-100 d-flex flex-column align-items-end justify-content-between'>
                                                         <h5 className='small p-2 mt-1 mb-1 rounded-1 fw-bolder w-50' style={{ background: 'linear-gradient(135deg, #3574B9 0%, #F7AD7E 50%, #76C26E 100%)' }}>{item.discount}</h5>
-                                                        <FontAwesomeIcon className='icon-user small p-2 rounded-2 btn btn-outline-light w-50' icon={faCartPlus} />
+                                                        <button className='small p-2 rounded-2 btn btn-outline-light w-50'>
+                                                            <i class="fas fa-shopping-cart"></i>
+                                                        </button>
                                                     </Col>
                                                 </Row>
                                             </Button>
@@ -117,7 +117,7 @@ function Collection() {
                             </Row>
 
                             {/* Pagination */}
-                            <Row className='justify-content-center m-2'>
+                            <Row className='justify-content-center'>
                                 <CustomPagination
                                     totalItems={totalItems}
                                     itemsPerPage={itemsPerPage}
@@ -128,7 +128,7 @@ function Collection() {
                         </Container>
 
                         {/* Footer */}
-                        <div className='z-1'>
+                        <div className='mt-3 z-1'>
                             <Footer />
                         </div>
                     </div>

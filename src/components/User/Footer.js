@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo_footer from '../../assets/2x/logo_footer@2x.png'
-import { faInstagram, faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return (
@@ -33,13 +31,13 @@ const Footer = () => {
                             <h5>CONTACT</h5>
                             <div className='d-flex flex-column  opacity-50' >
                                 <a className='text-decoration-none mb-2 text-white' href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faInstagram} size="lg" /> Instagram
+                                    <i class="fab fa-instagram-square" size="lg"></i> Instagram
                                 </a>
                                 <a className='text-decoration-none mb-2 text-white' href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faFacebookF} size="lg" /> Facebook
+                                    <i class="fab fa-facebook-square" size="lg" style={{background:'#3D5A98'}}></i> Facebook
                                 </a>
                                 <a className='text-decoration-none mb-2 text-white' href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faTwitter} size="lg" /> Twitter
+                                    <i class="fab fa-twitter-square" size="lg" style={{background:'#1D9BF0'}}></i> Twitter
                                 </a>
                             </div>
                         </Col>

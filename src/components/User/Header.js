@@ -1,9 +1,7 @@
 import React from 'react';
-import { Navbar, Nav, Container, Dropdown, Button, ButtonGroup, OverlayTrigger } from 'react-bootstrap';
+import { Navbar, Nav, Container, Dropdown, Button, ButtonGroup} from 'react-bootstrap';
 import logo from '../../assets/2x/logo@2x.png';
 import { Row, Col } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faBell, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import NotificationPopover from './NotificationPopover';
 import CartPopover from './CartPopover';
 
@@ -39,8 +37,7 @@ const Header = () => {
                       <Dropdown.Toggle
                         className='menu_drop_down user_icon d-flex'
                         as={Button}
-                      >
-                        <FontAwesomeIcon className='icon-user text-light' icon={faUserCircle} />
+                      ><i className='icon-user text-light' class="fas fa-user-circle"></i>
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu style={{ padding: '10px', borderRadius: '10px' }}>

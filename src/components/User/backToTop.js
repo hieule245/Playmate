@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretUp } from '@fortawesome/free-solid-svg-icons';
 
 const BackToTopButton = () => {
     const [showButton, setShowButton] = useState(false);
@@ -51,7 +48,7 @@ const BackToTopButton = () => {
                         opacity:0.5
                     }}
                 >
-                    <FontAwesomeIcon icon={faCaretUp} className='opacity-100' size="lg" />
+                    <i class="fas fa-arrow-up" ></i>
                 </Button>
             )}
         </>

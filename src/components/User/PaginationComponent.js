@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Pagination from 'react-bootstrap/Pagination';
-import Form from 'react-bootstrap/Form';
 
 const CustomPagination = ({ totalItems, itemsPerPage, currentPage, onPageChange }) => {
     const totalPages = Math.ceil(totalItems / itemsPerPage);
@@ -12,7 +11,7 @@ const CustomPagination = ({ totalItems, itemsPerPage, currentPage, onPageChange 
     };
 
     return (
-        <div className="pagination-container">
+        <div className="pagination-container mt-3">
             <Pagination className="custom-pagination m-0">
                 <Pagination.First onClick={() => handlePageChange(1)} />
                 <Pagination.Prev onClick={() => handlePageChange(currentPage - 1)} />

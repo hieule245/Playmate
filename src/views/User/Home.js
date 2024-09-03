@@ -11,8 +11,6 @@ import background from '../../assets/2x/backgroud-blur@2x.png'
 import Header from '../../../src/components/User/Header';
 import { Card, Button, Form, Container, Row, Col } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
-import { faChess, faHistory, faUserFriends, faSortAlphaDown, faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Footer from '../../components/User/Footer'
 import BackToTopButton from '../../components/User/BackToTop';
 function Home() {
@@ -116,7 +114,7 @@ function Home() {
                 <div>
                   <Row className='align-items-center h-100 mb-5'>
                     <Col xs={1}>
-                      <FontAwesomeIcon icon={faChess} />
+                      <i class="fas fa-chess"></i>
                     </Col>
                     <Col xs={11}>
                       <h4 className='m-0 d-flex focus-content '>Multi-platform game.</h4>
@@ -124,7 +122,7 @@ function Home() {
                   </Row>
                   <Row className='align-items-center h-100 mb-5'>
                     <Col xs={1}>
-                      <FontAwesomeIcon icon={faUserFriends} />
+                      <i class="fas fa-users"></i>
                     </Col>
                     <Col xs={11}>
                       <h4 className='m-0 d-flex focus-content '>Supports multiple players, suitable for family and friends.</h4>
@@ -132,7 +130,7 @@ function Home() {
                   </Row>
                   <Row className='align-items-center h-100 mb-5'>
                     <Col xs={1}>
-                      <FontAwesomeIcon icon={faSortAlphaDown} />
+                      <i class="fas fa-sort-alpha-down-alt"></i>
                     </Col>
                     <Col xs={11}>
                       <h4 className='m-0 d-flex focus-content '>Variety of games with diverse rules.</h4>
@@ -140,7 +138,7 @@ function Home() {
                   </Row>
                   <Row className='align-items-center h-100'>
                     <Col xs={1}>
-                      <FontAwesomeIcon icon={faHistory} />
+                      <i class="fas fa-history"></i>
                     </Col>
                     <Col xs={11}>
                       <h4 className='m-0 d-flex focus-content '>Regularly updated with every version.</h4>
@@ -152,7 +150,7 @@ function Home() {
             <Container>
               <div className='frog-tokens-header d-flex justify-content-between align-items-center p-2'>
                 <h4>Frog tokens</h4>
-                <a href='/store/tokens' className='text-light'><FontAwesomeIcon icon={faArrowRight} /></a>
+                <a href='/store/tokens' className='text-light'><i class="fas fa-arrow-right"></i></a>
               </div>
               <Row>
                 {Array(3).fill(null).map((_, index) => (

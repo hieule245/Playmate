@@ -5,6 +5,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './views/User/Home';
 import Store from './views/User/Store';
 import Tokens from './views/User/TokenCollection';
+import Cart from './views/User/Cart';
+import Detail from './views/User/DetailProduct';
+import Purchase from './views/User/Purchase';
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +21,9 @@ function App() {
         {/* User Routes */}
         <Route path="/store" element={<Store />} />
         <Route path="/store/tokens" element={<Tokens />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/store/tokens/:token_id" element={<Detail />} />
+        <Route path="/purchase" element={<Purchase />} />
 
         {/* Admin Routes */}
         <Route path="/admin" element="#" />

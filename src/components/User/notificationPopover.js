@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Dropdown, Card, Image, Row, Col, Pagination } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell } from '@fortawesome/free-solid-svg-icons';
 import notification from '../../assets/2x/notification@2x.png';
 
 const NotificationPopover = () => {
@@ -42,7 +40,7 @@ const NotificationPopover = () => {
           alignItems: 'center'
         }}
       >
-        <FontAwesomeIcon icon={faBell} />
+        <i class="fas fa-bell"></i>
       </Dropdown.Toggle>
 
       <Dropdown.Menu style={{ width: '320px', padding: '1px', borderRadius: '10px' }}>
@@ -52,12 +50,12 @@ const NotificationPopover = () => {
             <hr className="my-2 opacity-100" />
             {currentNotifications.length > 0 ? (
               currentNotifications.map((notification) => (
-                <Row key={notification.id} style={{ marginBottom: '10px', alignItems:'center', padding:'5px', backgroundColor:'#4C4C4C', borderRadius:'3px'}}>
+                <Row key={notification.id} style={{ marginBottom: '10px', alignItems: 'center', padding: '5px', backgroundColor: '#4C4C4C', borderRadius: '3px' }}>
                   <Col xs={2}>
                     <Image src={notification.imgSrc} />
                   </Col>
                   <Col xs={10}>
-                    <div style={{ color: '#fff', fontWeight: 'bold' }}>{notification.title} <span style={{fontWeight:'lighter'}}>{notification.message}</span></div>
+                    <div style={{ color: '#fff', fontWeight: 'bold' }}>{notification.title} <span style={{ fontWeight: 'lighter' }}>{notification.message}</span></div>
                     <div style={{ color: 'limegreen', fontSize: 'smaller' }}>{notification.status}</div>
                     <div style={{ color: '#888', fontSize: 'small' }}>{notification.date}</div>
                   </Col>

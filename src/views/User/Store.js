@@ -17,8 +17,6 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import Footer from '../../components/User/Footer'
 import BackToTopButton from '../../components/User/BackToTop';
 import BreadcrumbComponent from '../../components/User/BreadcrumbComponent';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function Store() {
     return (
@@ -113,7 +111,7 @@ function Store() {
                             <div className='mb-3 mt-3 '>
                                 <div className='frog-tokens-header d-flex justify-content-between align-items-center p-2'>
                                     <h4>Frog tokens</h4>
-                                    <a href='/store/tokens' className='text-light'><FontAwesomeIcon icon={faArrowRight} /></a>
+                                    <a href='/store/tokens' className='text-light'><i class="fas fa-arrow-right"></i></a>
                                 </div>
                                 <Row className='m-3'>
                                     {Array(3).fill(null).map((_, index) => (
@@ -136,7 +134,7 @@ function Store() {
                                 <h4 className='d-flex'>Premium box</h4>
                                 <Row className='m-3'>
                                     <Col xs={12} md={8}>
-                                        <Card className=' rounded-4 position-relative justify-content-end' style={{ background: 'linear-gradient(135deg, #3574B9 0%, #F7AD7E 50%, #76C26E 100%)', height:'460px' }}>
+                                        <Card className=' rounded-4 position-relative justify-content-end' style={{ background: 'linear-gradient(135deg, #3574B9 0%, #F7AD7E 50%, #76C26E 100%)', height: '460px' }}>
                                             <img className='w-100 h-100 p-1 position-absolute z-1'
                                                 src={premium}
                                                 alt="Playmates Logo"

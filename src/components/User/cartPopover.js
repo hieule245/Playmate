@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
-import { Dropdown, Card, Image, Row, Col, Pagination } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingBag, faShoppingCart, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { Dropdown, Card, Image, Row, Col, Pagination, Nav } from 'react-bootstrap';
 import emptyCartImage from '../../assets/2x/cart@2x.png'; // Replace with your image path
-import { Link } from 'react-router-dom';
 
 const CartPopover = () => {
     const allItems = [
@@ -39,7 +35,7 @@ const CartPopover = () => {
                     alignItems: 'center'
                 }}
             >
-                <FontAwesomeIcon icon={faShoppingCart} />
+                <i class="fas fa-shopping-cart"></i>
             </Dropdown.Toggle>
 
             <Dropdown.Menu style={{ width: '320px', padding: '1px', borderRadius: '10px' }}>
@@ -47,7 +43,7 @@ const CartPopover = () => {
                     <Card.Body className='p-3'>
                         <div className='d-flex align-items-center justify-content-between'>
                             <Card.Title style={{ fontWeight: 'bold', color: '#fff' }}>Cart</Card.Title>
-                            <Link href="#"><FontAwesomeIcon className='text-white' icon={faCaretRight} /></Link>
+                            <Nav.Link href="/cart"><i class="fas fa-caret-right"></i></Nav.Link>
                         </div>
                         <hr className="my-2 opacity-100" />
                         {currentItems.length > 0 ? (
@@ -62,7 +58,7 @@ const CartPopover = () => {
                                         <div style={{ color: '#fff' }}>{item.price}</div>
                                     </Col>
                                     <Col xs={2} style={{ textAlign: 'right', color: 'white' }}>
-                                        <FontAwesomeIcon icon={faShoppingBag} />
+                                        <i class="fas fa-shopping-basket"></i>
                                     </Col>
                                 </Row>
                             ))
