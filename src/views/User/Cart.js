@@ -111,7 +111,7 @@ function Cart() {
                                                         <Row className='w-100 justify-content-between'>
                                                             <Col xs={1}><FormCheckInput /></Col>
                                                             <Col xs={3}>
-                                                                <img className='p-1 w-100' src={products} alt="Playmates Logo" />
+                                                                <img className='p-1 w-100' src={products} alt="Thorog Token" />
                                                             </Col>
                                                             <Col xs={8} className='d-flex flex-column justify-content-between'>
                                                                 <div>
