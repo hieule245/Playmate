@@ -11,7 +11,7 @@ const CustomPagination = ({ totalItems, itemsPerPage, currentPage, onPageChange 
     };
 
     return (
-        <div className="pagination-container mt-3">
+        <div className="pagination-container align-items-end mt-3">
             <Pagination className="custom-pagination m-0">
                 <Pagination.First onClick={() => handlePageChange(1)} />
                 <Pagination.Prev onClick={() => handlePageChange(currentPage - 1)} />

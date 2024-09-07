@@ -12,7 +12,7 @@ function Collection() {
     const [searchTerm, setSearchTerm] = useState('');
     const [filter, setFilter] = useState('most popular');
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage, setItemsPerPage] = useState(9); // Default items per page
+    const [itemsPerPage] = useState(9); // Default items per page
     const items = Array(20).fill({
         img: products,
         title: 'Throgo Token',

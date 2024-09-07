@@ -1,15 +1,17 @@
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 :root {
   --primary-color: linear-gradient(135deg, #3574B9 0%, #F7AD7E 50%, #76C26E 100%);
-  --bold-color: linear-gradient(135deg, #3574B9 0%, #FF8E8E 50%, #76C26E 100%);
+  --bold-color: linear-gradient(135deg, #3574B9 0%, #FF8E8E 50%, #52D681 100%);
+  --background_admin_sidebar: linear-gradient(180deg, #3574B9 0%, #FF8E8E 50%, #52D681 100%);
   --secondary-color: linear-gradient(135deg, #183658 0%, #631854 50%, #255B20 100%);
   --cancel-color: linear-gradient(135deg, #000000 0%, #ff0505 100%);
+}
+
+.Admin {
+  background-color: #F4FFEC;
+}
+
+.User {
+  background-color: var(--primary-color);
 }
 
 * {
@@ -65,6 +67,11 @@
 
 .focus-content {
   font-weight: lighter;
+}
+
+.square-button {
+  height: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .user_icon {
@@ -304,11 +311,12 @@ input.form-check-input {
   border: none;
   outline: none;
 }
+
 .quantity-btn:hover {
   background-color: #dedede;
 }
 
-input[type="text"] {
+.quantity-input input[type="text"] {
   width: 50px;
   height: 40px;
   text-align: center;
@@ -318,20 +326,79 @@ input[type="text"] {
   outline: none;
 }
 
-.form_group{
+.form_group {
   border: 1px black solid;
 }
 
-.form_label{
+.form_label {
   opacity: 0.4;
   font-size: small;
 }
 
-.form_control{
-background: white;
+.form_control {
+  background: white;
 }
 
 .dropdown-toggle::after {
-color: black !important;
-font-size: larger;
+  color: black !important;
+  font-size: larger;
+}
+
+.sidebar_container {
+  height: 95vh !important;
+  background: var(--background_admin_sidebar) !important;
+}
+
+.side-bar-container{
+  position: sticky;
+  top: 1rem;
+}
+
+.menu_items {
+  font-size: larger !important;
+}
+
+.menu_items:hover {
+  font-size: larger !important;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.menu_items:active {
+  font-size: larger !important;
+  background: #fff;
+  color: #7E7DA9 !important;
+}
+
+a.py-1.px-3.border.border-1.text-start.rounded-2.menu_items {
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb-item a {
+  color: #255B20 !important
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: #255B20 !important
+}
+
+.custom-pagination .page-link{
+  border-radius: 30%;
+  background-color: white;
+  border: 1px rgba(82, 214, 129, 1) solid !important;
+  color:rgb(18, 70, 24)!important;
+}
+
+.custom-pagination .page-link:hover{
+  border-radius: 30%;
+  background-color: rgba(82, 214, 129, 1);
+  border: 1px rgba(18, 70, 24, 0.321) solid !important;
+  color:rgb(18, 70, 24)!important;
+}
+
+.custom-pagination li.page-item.active .page-link{
+  border-radius: 30%;
+  border: 1px rgba(82, 214, 129, 1) solid !important;
+  background: rgba(82, 214, 129, 0.2);
+  color:rgb(18, 70, 24)
 }

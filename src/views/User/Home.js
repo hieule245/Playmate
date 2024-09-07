@@ -60,7 +60,7 @@ function Home() {
                   </div>
                 </Col>
                 <Col xs={4}>
-                  <Carousel className='z-0' slide={false}>
+                  <Carousel className='z-0 text-center' slide={false}>
                     <Carousel.Item>
                       <img className='p-1'
                         src={carosel_img1}
@@ -117,7 +117,7 @@ function Home() {
                       <i class="fas fa-chess"></i>
                     </Col>
                     <Col xs={11}>
-                      <h4 className='m-0 d-flex focus-content '>Multi-platform game.</h4>
+                      <h4 className='m-0 focus-content '>Multi-platform game.</h4>
                     </Col>
                   </Row>
                   <Row className='align-items-center h-100 mb-5'>
@@ -125,7 +125,7 @@ function Home() {
                       <i class="fas fa-users"></i>
                     </Col>
                     <Col xs={11}>
-                      <h4 className='m-0 d-flex focus-content '>Supports multiple players, suitable for family and friends.</h4>
+                      <h4 className='m-0 focus-content '>Supports multiple players, suitable for family and friends.</h4>
                     </Col>
                   </Row>
                   <Row className='align-items-center h-100 mb-5'>
@@ -133,7 +133,7 @@ function Home() {
                       <i class="fas fa-sort-alpha-down-alt"></i>
                     </Col>
                     <Col xs={11}>
-                      <h4 className='m-0 d-flex focus-content '>Variety of games with diverse rules.</h4>
+                      <h4 className='m-0 focus-content '>Variety of games with diverse rules.</h4>
                     </Col>
                   </Row>
                   <Row className='align-items-center h-100'>
@@ -141,7 +141,7 @@ function Home() {
                       <i class="fas fa-history"></i>
                     </Col>
                     <Col xs={11}>
-                      <h4 className='m-0 d-flex focus-content '>Regularly updated with every version.</h4>
+                      <h4 className='m-0 focus-content '>Regularly updated with every version.</h4>
                     </Col>
                   </Row>
                 </div>
@@ -212,10 +212,10 @@ function Home() {
                     />
                   </Col>
                   <Col xs={6} className=''>
-                    <div className=' d-flex flex-column justify-content-evenly'>
+                    <div className=' d-flex flex-column justify-content-evenly text-center'>
                       <h4 className="text-center text-white mb-4">LEAVE US YOUR INFORMATION TO ORDER BASIC</h4>
                       <Form onSubmit={handleSubmit}>
-                        <Form.Group controlId="formName">
+                        <Form.Group controlId="formName" className='text-center'>
                           <Form.Label className="text-white d-flex"><strong><span className='text-warning'>*</span> Name</strong></Form.Label>
                           <Form.Control
                             type="text"
