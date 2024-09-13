@@ -1,4 +1,3 @@
-import logo from '../src/assets/2x/logo@2x.png';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './views/User/Home';
